@@ -200,58 +200,6 @@ class WeatherFragment : Fragment() {
         searchView.queryHint = getString(R.string.enter_a_city)
         searchView.maxWidth = Int.MAX_VALUE
 
-
-        val from = arrayOf(SearchManager.SUGGEST_COLUMN_TEXT_1)
-        val to = intArrayOf(R.id.item_label)
-        val cursorAdapter = SimpleCursorAdapter(context, R.layout.search_suggestions, null, from, to, CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER)
-        val suggestions = listOf("Apple", "Blueberry", "Carrot", "Daikon", "NIGGER")
-
-        searchView.suggestionsAdapter = cursorAdapter
-
-        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(query: String?): Boolean {
-                if (query != null) {
-                    viewModel.getWeather(query.trim())
-                    searchView.setQuery("", false);
-                    searchView.onActionViewCollapsed()
-                    searchView.clearFocus()
-                }
-
-                return true
-            }
-
-            override fun onQueryTextChange(query: String?): Boolean {
-                val cursor = MatrixCursor(arrayOf(BaseColumns._ID, SearchManager.SUGGEST_COLUMN_TEXT_1))
-                query?.let {
-                    suggestions.forEachIndexed { index, suggestion ->
-                        if (suggestion.contains(query, true))
-                            cursor.addRow(arrayOf(index, suggestion))
-                    }
-                }
-
-                cursorAdapter.changeCursor(cursor)
-                return true
-            }
-        })
-
-        searchView.setOnSuggestionListener(object: SearchView.OnSuggestionListener {
-            override fun onSuggestionSelect(position: Int): Boolean {
-                return false
-            }
-
-            @SuppressLint("Range")
-            override fun onSuggestionClick(position: Int): Boolean {
-                //hideKeyboard()
-                val cursor = searchView.suggestionsAdapter.getItem(position) as Cursor
-                val selection = cursor.getString(cursor.getColumnIndex(SearchManager.SUGGEST_COLUMN_TEXT_1))
-                searchView.setQuery(selection, false)
-
-                // Do something with selection
-                return true
-            }
-        })
-
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
