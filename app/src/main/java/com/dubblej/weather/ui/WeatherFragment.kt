@@ -200,6 +200,25 @@ class WeatherFragment : Fragment() {
         searchView.queryHint = getString(R.string.enter_a_city)
         searchView.maxWidth = Int.MAX_VALUE
 
+
+
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                if (query != null) {
+                    viewModel.getWeather(query.trim())
+                    searchView.setQuery("", false);
+                    searchView.onActionViewCollapsed()
+                    searchView.clearFocus()
+                }
+
+                return true
+            }
+
+            override fun onQueryTextChange(query: String?): Boolean {
+                return true
+            }
+        })
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
