@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/menu_item_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_item_current_location"
+        android:icon="@drawable/ic_current_location"
+        app:showAsAction="always"
+        android:title="Use Current Location" />
+
+    <item
+        android:id="@+id/settings_menu_item"
+        android:icon="@drawable/menu_icon"
+        android:title="Settings"
+        app:showAsAction="ifRoom"
+        />
+
+
+
+</menu>

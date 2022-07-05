@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/_01d.xml" value="0.2145" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/_13n.xml" value="0.2125" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/card_color.xml" value="0.1" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/circle.xml" value="0.182" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/collapse.xml" value="0.1765" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/current_weather_details_grid_view_background.xml" value="0.181" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/current_weather_details_grid_view_background_dark.xml" value="0.181" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/daily_forecast_background.xml" value="0.177" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/daily_forecast_border.xml" value="0.212" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/expand_background.xml" value="0.147" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/expand_foreground.xml" value="0.147" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/ic_current_location.xml" value="0.1" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/ic_launcher_background.xml" value="0.147" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.147" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/drawable/ic_search.xml" value="0.1" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/activity_main.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/activity_main_2.xml" value="0.152" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/card_view_daily_forecast.xml" value="0.2" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/card_view_daily_forecast_2.xml" value="0.1" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/cawd.xml" value="0.18981481481481483" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/daily_forecast_details.xml" value="0.264" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/enter_a_city_dialog_fragment.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/expandable_list_view.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/fragment_daily_forecast.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/fragment_settings.xml" value="0.16097560975609757" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/fragment_weather.xml" value="0.2" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/fragment_weather_2.xml" value="0.2" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/layout_group.xml" value="0.1" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/list_item_daily_forecast.xml" value="0.1" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/list_item_hourly_forecast.xml" value="0.4" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/new_direction.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/oh_cawd.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/search_suggestions.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/layout/test.xml" value="0.14792299898682879" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/menu/menu.xml" value="0.30416666666666664" />
+        <entry key="..\:/Users/doubl/Weather/app/src/main/res/mipmap-anydpi-v26/expand.xml" value="0.147" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

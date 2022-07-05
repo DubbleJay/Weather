@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fragment_weather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.WeatherFragment">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/error_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="25sp"
+            android:visibility="gone"
+            tools:text="ERROR ENCOUNTERED!"
+            tools:visibility="visible" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/weather_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/weather_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/city_name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="15dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    tools:text="San Diego" />
+
+                <TextView
+                    android:id="@+id/date_and_time_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textSize="15sp"
+                    tools:text="Sunday, Neveraury 32, 11:59PM" />
+
+                <ImageView
+                    android:id="@+id/weather_icon"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/date_and_time_text_view"
+                    tools:src="@drawable/_03n" />
+
+                <TextView
+                    android:id="@+id/description_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="15.5sp"
+                    tools:text="Cloudy" />
+
+                <TextView
+                    android:id="@+id/current_temperature_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="60sp"
+                    tools:text="74°F" />
+
+
+                <TextView
+                    android:id="@+id/feels_like_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    tools:text="Feels like 66°F" />
+
+
+                <GridLayout
+                    android:id="@+id/grid_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8.5dp"
+                    android:background="@drawable/current_weather_details_grid_view_background"
+                    android:columnCount="3"
+                    android:padding="10dp"
+                    android:rowCount="3">
+
+                    <TextView
+                        android:id="@+id/clouds_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        style="@style/CurrentWeatherDetailsTextView"
+                        android:textSize="14sp"
+                        tools:text="Clouds: 33%" />
+
+                    <TextView
+                        android:id="@+id/wind_speed_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        style="@style/CurrentWeatherDetailsTextView"
+                        android:textSize="14sp"
+                        tools:text="Wind : 11.5mph" />
+
+                    <TextView
+                        android:id="@+id/uv_index_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        style="@style/CurrentWeatherDetailsTextView"
+                        android:textSize="14sp"
+                        tools:text="UV Index: 1.1" />
+
+
+                    <TextView
+                        android:id="@+id/visibility_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        style="@style/CurrentWeatherDetailsTextView"
+                        android:textSize="14sp"
+                        tools:text="Visibility: 6.2mi" />
+
+                    <TextView
+                        android:id="@+id/humidity_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        style="@style/CurrentWeatherDetailsTextView"
+                        android:textSize="14sp"
+                        tools:text="Humidity: 99%" />
+
+                    <TextView
+                        android:id="@+id/dew_point_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="center"
+                        style="@style/CurrentWeatherDetailsTextView"
+                        android:textSize="14sp"
+                        tools:text="Dew point: 35°F" />
+
+
+                </GridLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/hourly_forecast_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="7sp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/list_item_hourly_forecast" />
+
+                <LinearLayout
+                    android:id="@+id/daily_forecast_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="30dp" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

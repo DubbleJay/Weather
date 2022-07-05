@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weatherFragment2"
+    android:name="com.dubblej.weather.ui.WeatherFragment"
+    tools:layout="@layout/fragment_weather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</androidx.fragment.app.FragmentContainerView>
