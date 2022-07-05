@@ -10,7 +10,6 @@ import androidx.cardview.widget.CardView
 import androidx.transition.AutoTransition
 import androidx.transition.TransitionManager
 import com.dubblej.weather.R
-import com.dubblej.weather.UserPreferences
 import com.dubblej.weather.data.Weather
 import com.dubblej.weather.databinding.CardViewDailyForecastBinding
 
